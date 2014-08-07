@@ -1,6 +1,6 @@
 /*
 	ractive-legacy.runtime.js v0.5.5
-	2014-07-13 - commit 8b1d34ef 
+	2014-07-13 - commit 8b1d34ef
 
 	http://ractivejs.org
 	http://twitter.com/RactiveJS
@@ -1751,7 +1751,7 @@
             		var length = list.length >>> 0;
             		var thisArg = arguments[1];
             		var value;
-        
+
             		for (var i = 0; i < length; i++) {
             			if (i in list) {
             				value = list[i];
@@ -1932,7 +1932,7 @@
 								style[ property ] = getPixelSize( element, currentStyle, property, fontSize ) + 'px';
 							}
 						} else if ( property === 'styleFloat' ) {
-							style.float = currentStyle[ property ];
+							style['float'] = currentStyle[ property ];
 						} else {
 							style[ property ] = currentStyle[ property ];
 						}
